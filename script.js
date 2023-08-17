@@ -1,4 +1,4 @@
-let todos
+let todos =[]
 
 (function (){
     if (localStorage.getItem('todos') === null) return
