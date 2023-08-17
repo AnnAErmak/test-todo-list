@@ -11,40 +11,18 @@
 <body>
 <div class="container">
     <h1>Список дел</h1>
-    <form class="form-todo">
-        <input type="text" placeholder="Напишите новую задачу" />
+    <form id="form" class="form-todo">
+        <input id="taskInput" type="text" placeholder="Напишите новую задачу" />
         <div class="form-actions">
-            <button>Добавить</button>
-            <button>Выделить цветом каждый четный</button>
-            <button>Выделить цветом каждый нечетный</button>
-            <button>Удалить последнюю задачу</button>
-            <button>Удалить первую задачу</button>
+            <button id="addTask">Добавить</button>
+            <button id="evenTasks">Выделить цветом каждый четный</button>
+            <button id="oddTasks">Выделить цветом каждый нечетный</button>
+            <button type="button" id="deleteLast">Удалить последнюю задачу</button>
+            <button type="button" id="deleteFirst">Удалить первую задачу</button>
         </div>
     </form>
     <div class="wrapper-todo-list">
-        <ul class="todo-list">
-            <li class="todo">
-                Первая
-                <div  class="todo-actions">
-                    <button><img width="16" src="images/Tick_Mark.svg"></button>
-                    <button><img src="images/delete.svg"></button>
-
-                </div>
-            </li>
-            <li class="todo">Вторая
-                <div class="todo-actions">
-                    <button><img width="16" src="images/Tick_Mark.svg"></button>
-                    <button><img src="images/delete.svg"></button>
-
-                </div>
-            </li>
-            <li class="todo">Третья
-                <div  class="todo-actions">
-                    <button><img width="16" src="images/Tick_Mark.svg"></button>
-                    <button><img src="images/delete.svg"></button>
-
-                </div>
-</li>
+        <ul id="todoList" class="todo-list">
         </ul>
     </div>
 </div>
