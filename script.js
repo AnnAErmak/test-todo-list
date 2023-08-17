@@ -1,11 +1,11 @@
 let todos =[]
 
-(function (){
+function init (){
     if (localStorage.getItem('todos') === null) return
     let storageTodos = JSON.parse(localStorage.getItem('todos'))
     todos = storageTodos
     renderTodos(storageTodos)
-})()
+}
 
 const newTask = document.querySelector('#taskInput')
 const btnAddTask = document.querySelector('#addTask')
@@ -109,3 +109,4 @@ function renderTodos(todos){
     todoList.innerHTML = ''
     preparationTodos(todos)
 }
+init ()
